@@ -17,14 +17,8 @@ return require('packer').startup(function()
         requires = 'kyazdani42/nvim-web-devicons'
   }
 
+  --copilot
+  use 'github/copilot.vim'
 
 
 end)
--- use{"ellisonleao/gruvbox.nvim",requires = {"rktjmp/lush.nvim"}}
---     -- nvim-tree (新增)
---     use {
---         'kyazdani42/nvim-tree.lua',
---         requires = 'kyazdani42/nvim-web-devicons'
---     }
--- end)
--- use 'glepnir/zephyr-nvim'
