@@ -20,5 +20,12 @@ return require('packer').startup(function()
   --copilot
   use 'github/copilot.vim'
 
+  -- treesitter
+  use { 'nvim-treesitter/nvim-treesitter', 
+    run = ':TSUpdate' ,
+    requires = {
+        "p00f/nvim-ts-rainbow" -- 彩虹括号
+    }
+  }
 
 end)

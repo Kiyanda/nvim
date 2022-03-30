@@ -12,3 +12,4 @@ colorscheme zephyr
 " 插件配置
 lua require('plugin-config/nvim-tree')
 lua require('plugin-config/bufferline')
+lua require('plugin-config/nvim-treesitter')

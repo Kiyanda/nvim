@@ -27,17 +27,18 @@ map("c", "<C-k>", "<C-p>", {
 })
 
 -- 上下滚动浏览
-map("n", "<C-j>", "4j", opt)
-map("n", "<C-k>", "4k", opt)
+map("n", "<C-k>", "4k", opt) --
+map("n", "<C-j>", "4j", opt) --
 
--- ctrl u / ctrl + d  只移动9行，默认移动半屏
-map("n", "<C-u>", "9k", opt)
-map("n", "<C-d>", "9j", opt)
+-- ctrl u / ctrl + d  只移动9行
+--，默认移动半屏
+map("n", "<C-w>", "9k", opt)  -- 向上移动9行
+map("n", "<C-s>", "9j", opt)  -- 向下移动9行
 
 
 -- nvimTree
 map('n', '<A-m>', ':NvimTreeToggle<CR>', opt)
 
 -- bufferline 左右Tab切换
-map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<C-a>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<C-d>", ":BufferLineCycleNext<CR>", opt)
